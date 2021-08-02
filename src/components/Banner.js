@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
 const BannerBlock = styled.div`
-  height: 200px;
+  height: 300px;
   background-color: gray;
 `;
 
@@ -16,6 +16,7 @@ function Banner() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
   };
   return (
     <div>
