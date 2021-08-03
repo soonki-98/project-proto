@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const NavContainer = styled.ul`
@@ -26,14 +26,7 @@ const NavList = styled.li`
   font-weight: bold;
 `;
 
-function ClubHeader() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", updateScroll);
-  });
+function ClubHeader({ scrollPosition }) {
   return (
     <nav>
       <NavContainer scrollPosition={scrollPosition}>

@@ -1,15 +1,7 @@
-import Banner from "./components/Banner";
-import Body from "./components/Body";
-import ClubHeader from "./components/ClubHeader";
+import Home from "./container/Home";
 
 function App() {
-  return (
-    <div>
-      <ClubHeader />
-      <Banner />
-      <Body />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

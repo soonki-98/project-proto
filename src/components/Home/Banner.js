@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import WooahanLogo from "../style/img/Logo.png";
-import Gstar from "../style/img/Gstar.jpg";
-import Jungsan from "../style/img/Jungsan.png";
-import Sisa from "../style/img/Sisa.png";
-import Soum from "../style/img/Soum.png";
-import BlueShark from "../style/img/BlueShark.png";
+import WooahanLogo from "../../style/img/Logo.png";
+import Gstar from "../../style/img/Gstar.jpg";
+import Jungsan from "../../style/img/Jungsan.png";
+import Sisa from "../../style/img/Sisa.png";
+import Soum from "../../style/img/Soum.png";
+import BlueShark from "../../style/img/BlueShark.png";
 
 const BannerBlock = styled.li`
   height: 450px;
