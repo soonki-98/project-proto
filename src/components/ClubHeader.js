@@ -2,14 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 const NavContainer = styled.ul`
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   background-color: skyblue;
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: 0 0 50px 0;
   padding: 0;
   list-style-type: none;
   justify-content: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 1px 1px 1px 1px lightgray;
 `;
 
 const NavList = styled.li`

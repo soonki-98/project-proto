@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Body from "./components/Body";
 import ClubHeader from "./components/ClubHeader";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <ClubHeader />
       <Banner />
+      <Body />
     </div>
   );
 }

@@ -3,44 +3,61 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
+import WooahanLogo from "../style/img/Logo.png";
+import Gstar from "../style/img/Gstar.jpg";
+import Jungsan from "../style/img/Jungsan.png";
+import Sisa from "../style/img/Sisa.png";
+import Soum from "../style/img/Soum.png";
+import BlueShark from "../style/img/BlueShark.png";
 
-const BannerBlock = styled.div`
-  height: 300px;
-  background-color: gray;
+const BannerBlock = styled.li`
+  height: 450px;
+`;
+
+const DivBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 900px;
+`;
+
+const ImgBlock = styled.img`
+  display: block;
+  margin: 0 auto;
 `;
 
 function Banner() {
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
   };
   return (
-    <div>
+    <DivBlock>
       <Slider {...settings}>
         <BannerBlock>
-          <h3>1</h3>
+          <ImgBlock src={WooahanLogo} width="450px" height="450px" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <h3>2</h3>
+          <ImgBlock src={Gstar} width="450px" height="450px" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <h3>3</h3>
+          <ImgBlock src={Jungsan} width="450px" height="450px" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <h3>4</h3>
+          <ImgBlock src={Sisa} width="450px" height="450px" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <h3>5</h3>
+          <ImgBlock src={Soum} width="450px" height="450px" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <h3>6</h3>
+          <ImgBlock src={BlueShark} width="450px" height="450px" alt="배경" />
         </BannerBlock>
       </Slider>
-    </div>
+    </DivBlock>
   );
 }
 
