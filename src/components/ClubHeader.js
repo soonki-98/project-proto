@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const NavContainer = styled.ul`
@@ -7,7 +7,8 @@ const NavContainer = styled.ul`
   left: 0;
   right: 0;
   z-index: 9999;
-  background-color: skyblue;
+  background-color: ${(props) =>
+    props.scrollPosition > 1 ? "white" : "skyblue"};
   display: flex;
   flex-direction: row;
   margin: 0 0 50px 0;
@@ -26,9 +27,16 @@ const NavList = styled.li`
 `;
 
 function ClubHeader() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", updateScroll);
+  });
   return (
     <nav>
-      <NavContainer>
+      <NavContainer scrollPosition={scrollPosition}>
         <NavList>서비스 소개</NavList>
         <NavList>동아리 목록</NavList>
         <NavList>동아리 홍보</NavList>
