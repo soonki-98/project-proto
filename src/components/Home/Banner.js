@@ -3,23 +3,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import WooahanLogo from "../../style/img/Logo.png";
-import Gstar from "../../style/img/Gstar.jpg";
-import Jungsan from "../../style/img/Jungsan.png";
-import Sisa from "../../style/img/Sisa.png";
-import Soum from "../../style/img/Soum.png";
-import BlueShark from "../../style/img/BlueShark.png";
+import bg1 from "../../style/img/bg1.jpg";
+import bg2 from "../../style/img/bg2.jpg";
+import bg3 from "../../style/img/bg3.jpg";
+import bg4 from "../../style/img/bg4.jpg";
+import bg5 from "../../style/img/bg5.jpg";
+import bg6 from "../../style/img/bg6.jpg";
 
 const BannerBlock = styled.li`
-  height: 450px;
+  height: 600px;
 `;
 
 const DivBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 100px;
-  width: 900px;
+  margin-bottom: 30px;
+  margin-top: 120px;
 `;
 
 const ImgBlock = styled.img`
@@ -30,31 +30,32 @@ const ImgBlock = styled.img`
 function Banner() {
   const settings = {
     infinite: true,
-    speed: 1500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 3000,
   };
   return (
     <DivBlock>
       <Slider {...settings}>
         <BannerBlock>
-          <ImgBlock src={WooahanLogo} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg1} width="60%" height="80%" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={Gstar} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg2} width="60%" height="80%" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={Jungsan} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg3} width="60%" height="80%" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={Sisa} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg4} width="60%" height="80%" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={Soum} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg5} width="60%" height="80%" alt="배경" />
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={BlueShark} width="450px" height="450px" alt="배경" />
+          <ImgBlock src={bg6} width="60%" height="80%" alt="배경" />
         </BannerBlock>
       </Slider>
     </DivBlock>
