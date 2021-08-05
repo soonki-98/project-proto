@@ -10,7 +10,7 @@ const NavContainer = styled.ul`
   right: 0;
   z-index: 9999;
   background-color: ${(props) =>
-    props.scrollPosition > 1 ? "white" : "skyblue"};
+    props.scrollPosition > 1 ? "#82D9C9" : "#C2F2DC"};
   display: flex;
   flex-direction: row;
   margin: 0 0 50px 0;

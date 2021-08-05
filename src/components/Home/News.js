@@ -17,13 +17,13 @@ const DivBlock = styled.div`
 const Contents1 = styled.div`
   width: 60%;
   height: 70%;
-  background-color: skyblue;
+  background-color: #f2b705;
   margin-bottom: 20px;
 `;
 const Contents2 = styled.div`
   width: 60%;
   height: 70%;
-  background-color: lightgray;
+  background-color: #f2d5c4;
 `;
 
 function News() {

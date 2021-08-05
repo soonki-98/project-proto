@@ -4,7 +4,7 @@ import styled from "styled-components";
 const FooterBlock = styled.div`
   margin-top: 250px;
   height: 110px;
-  background-color: gray;
+  background-color: #468c78;
 `;
 
 function Footer() {
