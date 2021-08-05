@@ -24,8 +24,8 @@ function Home() {
         toggle={toggle}
         onToggle={onToggle}
       />
-      <Banner />
       <Logo />
+      <Banner />
       <News />
       <Footer />
     </>

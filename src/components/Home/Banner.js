@@ -3,36 +3,50 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import bg1 from "../../style/img/bg1.jpg";
-import bg2 from "../../style/img/bg2.jpg";
-import bg3 from "../../style/img/bg3.jpg";
-import bg4 from "../../style/img/bg4.jpg";
-import bg5 from "../../style/img/bg5.jpg";
-import bg6 from "../../style/img/bg6.jpg";
+import {
+  AiOutlineGithub,
+  AiFillAliwangwang,
+  AiFillApple,
+  AiOutlineQq,
+  AiOutlineTwitter,
+  AiFillAndroid,
+  AiFillCar,
+  AiFillCloud,
+  AiFillCustomerService,
+  AiFillGitlab,
+  AiFillHome,
+  AiFillRocket,
+  AiFillSmile,
+  AiOutlineDropbox,
+  AiOutlineFire,
+  AiOutlineSearch,
+  AiOutlineUserAdd,
+  AiOutlineUsb,
+  AiOutlineWeibo,
+} from "react-icons/ai";
 
+const PBlock = styled.p`
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: gray;
+`;
 const BannerBlock = styled.li`
-  height: 600px;
+  height: 200px;
+  text-align: center;
 `;
 
 const DivBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 120px;
-`;
-
-const ImgBlock = styled.img`
-  display: block;
-  margin: 0 auto;
+  margin: 0 100px 200px 100px;
 `;
 
 function Banner() {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 8,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -40,22 +54,84 @@ function Banner() {
     <DivBlock>
       <Slider {...settings}>
         <BannerBlock>
-          <ImgBlock src={bg1} width="60%" height="80%" alt="배경" />
+          <AiOutlineGithub cursor="pointer" size="40%" />
+          <PBlock>깃허브</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={bg2} width="60%" height="80%" alt="배경" />
+          <AiFillAliwangwang size="40%" />
+          <PBlock>왕왕</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={bg3} width="60%" height="80%" alt="배경" />
+          <AiFillApple size="40%" />
+          <PBlock>애플</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={bg4} width="60%" height="80%" alt="배경" />
+          <AiOutlineQq size="40%" />
+          <PBlock>큐큐</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={bg5} width="60%" height="80%" alt="배경" />
+          <AiOutlineTwitter size="40%" />
+          <PBlock>트위터</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <ImgBlock src={bg6} width="60%" height="80%" alt="배경" />
+          <AiFillAndroid cursor="pointer" size="40%" />
+          <PBlock>안드로이드</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillCar size="40%" />
+          <PBlock>자동차</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillCloud size="40%" />
+          <PBlock>클라우드</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillCustomerService size="40%" />
+          <PBlock>음악</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillGitlab size="40%" />
+          <PBlock>깃랩</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillHome cursor="pointer" size="40%" />
+          <PBlock>집</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillRocket size="40%" />
+          <PBlock>로켓</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillApple size="40%" />
+          <PBlock>애플</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiFillSmile size="40%" />
+          <PBlock>웃음</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineDropbox size="40%" />
+          <PBlock>드롭박스</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineFire cursor="pointer" size="40%" />
+          <PBlock>뽜이야~</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineSearch size="40%" />
+          <PBlock>검색</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineUserAdd size="40%" />
+          <PBlock>유저 더하기</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineUsb size="40%" />
+          <PBlock>USB</PBlock>
+        </BannerBlock>
+        <BannerBlock>
+          <AiOutlineWeibo size="40%" />
+          <PBlock>웨이보</PBlock>
         </BannerBlock>
       </Slider>
     </DivBlock>
