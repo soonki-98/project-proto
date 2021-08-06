@@ -58,19 +58,19 @@ function Banner() {
           <PBlock>깃허브</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillAliwangwang size="40%" />
+          <AiFillAliwangwang cursor="pointer" size="40%" />
           <PBlock>왕왕</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillApple size="40%" />
+          <AiFillApple cursor="pointer" size="40%" />
           <PBlock>애플</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineQq size="40%" />
+          <AiOutlineQq cursor="pointer" size="40%" />
           <PBlock>큐큐</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineTwitter size="40%" />
+          <AiOutlineTwitter cursor="pointer" size="40%" />
           <PBlock>트위터</PBlock>
         </BannerBlock>
         <BannerBlock>
@@ -78,19 +78,19 @@ function Banner() {
           <PBlock>안드로이드</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillCar size="40%" />
+          <AiFillCar cursor="pointer" size="40%" />
           <PBlock>자동차</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillCloud size="40%" />
+          <AiFillCloud cursor="pointer" size="40%" />
           <PBlock>클라우드</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillCustomerService size="40%" />
+          <AiFillCustomerService cursor="pointer" size="40%" />
           <PBlock>음악</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillGitlab size="40%" />
+          <AiFillGitlab cursor="pointer" size="40%" />
           <PBlock>깃랩</PBlock>
         </BannerBlock>
         <BannerBlock>
@@ -98,19 +98,19 @@ function Banner() {
           <PBlock>집</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillRocket size="40%" />
+          <AiFillRocket cursor="pointer" size="40%" />
           <PBlock>로켓</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillApple size="40%" />
+          <AiFillApple cursor="pointer" size="40%" />
           <PBlock>애플</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiFillSmile size="40%" />
+          <AiFillSmile cursor="pointer" size="40%" />
           <PBlock>웃음</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineDropbox size="40%" />
+          <AiOutlineDropbox cursor="pointer" size="40%" />
           <PBlock>드롭박스</PBlock>
         </BannerBlock>
         <BannerBlock>
@@ -118,19 +118,19 @@ function Banner() {
           <PBlock>뽜이야~</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineSearch size="40%" />
+          <AiOutlineSearch cursor="pointer" size="40%" />
           <PBlock>검색</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineUserAdd size="40%" />
+          <AiOutlineUserAdd cursor="pointer" size="40%" />
           <PBlock>유저 더하기</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineUsb size="40%" />
+          <AiOutlineUsb cursor="pointer" size="40%" />
           <PBlock>USB</PBlock>
         </BannerBlock>
         <BannerBlock>
-          <AiOutlineWeibo size="40%" />
+          <AiOutlineWeibo cursor="pointer" size="40%" />
           <PBlock>웨이보</PBlock>
         </BannerBlock>
       </Slider>

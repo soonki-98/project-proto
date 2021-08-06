@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DivBlock = styled.div`
   text-align: center;
-  margin: 300px 0;
+  margin: 380px 0;
 `;
 
 function Logo() {
